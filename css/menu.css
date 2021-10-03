@@ -1,0 +1,254 @@
+@charset "UTF-8";
+/* リンク先の表示 */
+header, footer {
+  background-color: #EE0000;
+  text-align: center;
+}
+header .menu-navi, footer .menu-navi {
+  display: flex;
+  justify-content: center;
+}
+header a, footer a {
+  color: white;
+  font-weight: 200;
+  font-size: 1.5em;
+  margin-right: 35px;
+  text-decoration: none;
+}
+header a:hover, footer a:hover {
+  color: #ffff1a;
+  text-decoration: underline;
+}
+
+body {
+  font-family: sans-serif;
+  width: 100%;
+  margin: 0 auto;
+  min-height: 100vh;
+  display: grid;
+  grid-template: "header" auto "main" 1fr "footer" auto;
+}
+
+ul {
+  list-style: none;
+}
+
+header {
+  border: 1px solid;
+  grid-area: header;
+}
+
+main {
+  border: 1px solid;
+  grid-area: main;
+}
+
+footer {
+  border: 1px solid;
+  grid-area: footer;
+}
+
+header .phone-number::before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f879";
+  color: #fff;
+  text-align: center;
+}
+
+.map-navi::before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f5a0";
+  color: #fff;
+  margin-right: 5px;
+  text-align: center;
+}
+
+/* メニュー文字 */
+.menu-header {
+  margin-bottom: 3%;
+  text-align: center;
+}
+
+.menu-header-bottom {
+  border-bottom: 5px solid red;
+  padding-bottom: 10px;
+}
+
+input[name="menu"] {
+  display: none;
+}
+
+#navi label {
+  margin: 20px;
+  cursor: pointer;
+}
+
+#menu > div {
+  display: none;
+}
+
+#menu-wrapper {
+  width: 90%;
+  margin: 0 auto;
+}
+
+#all:checked ~ #navi label[for="all"],
+#noodle:checked ~ #navi label[for="noodle"],
+#rice:checked ~ #navi label[for="rice"],
+#side:checked ~ #navi label[for="side"],
+#drink:checked ~ #navi label[for="drink"],
+#takeout:checked ~ #navi label[for="takeout"],
+#lunch:checked ~ #navi label[for="lunch"] {
+  color: orangered;
+  border-bottom: 1px solid orange;
+}
+
+#all:checked ~ #menu > div,
+#noodle:checked ~ #menu > .noodle,
+#rice:checked ~ #menu > .rice,
+#side:checked ~ #menu > .side,
+#drink:checked ~ #menu > .drink,
+#takeout:checked ~ #menu > .takeout,
+#lunch:checked ~ #menu > .lunch {
+  display: block;
+  padding-top: 20px;
+}
+
+#all:checked ~ #menu,
+#noodle:checked ~ #menu,
+#rice:checked ~ .rice-menu,
+#side:checked ~ .side-menu,
+#drink:checked ~ .drink-menu,
+#takeout:checked ~ .takeout-menu,
+#lunch:checked ~ .lunch-menu {
+  margin-bottom: 3%;
+}
+
+#menu {
+  background-color: #FAF0E6;
+  place-items: center stretch;
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 300px);
+  gap: 20px;
+}
+
+#navi {
+  flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2%;
+  text-align: center;
+}
+
+.miso > h2, .miso > p {
+  color: #B22222;
+}
+.miso > h2 {
+  font-size: 3em;
+}
+
+.chuka > h2, .chuka > p {
+  color: red;
+}
+.chuka > h2 {
+  font-size: 3em;
+}
+
+.syouyu > h2, .syouyu > p {
+  color: red;
+}
+.syouyu > h2 {
+  font-size: 3em;
+}
+
+.solt > h2, .solt > p {
+  color: #007700;
+}
+.solt > h2 {
+  font-size: 3em;
+}
+
+.other > h2, .other > p {
+  color: #000;
+}
+.other > h2 {
+  font-size: 3em;
+}
+
+.child > h2, .child > p {
+  color: #000;
+}
+.child > h2 {
+  font-size: 3em;
+}
+
+.rice > h2, .rice > p {
+  color: #000;
+}
+.rice > h2 {
+  font-size: 3em;
+}
+
+.side > h2, .side > p {
+  color: #000;
+}
+.side > h2 {
+  font-size: 3em;
+}
+
+.drink > h2, .drink > p {
+  color: #000;
+}
+.drink > h2 {
+  font-size: 2.2em;
+}
+
+.takeout > h2, .takeout > p {
+  color: #000;
+}
+.takeout > h2 {
+  font-size: 2.2em;
+}
+
+.lunch > h2, .lunch > p {
+  color: #000;
+}
+.lunch > h2 {
+  font-size: 3em;
+}
+
+.menu-concept {
+  padding-left: 20px;
+  text-align: justify;
+  text-justify: auto;
+}
+
+.impact {
+  color: red;
+}
+
+footer .phone-wrapper {
+  margin: 2.5% 0px;
+}
+footer .phone-number {
+  padding: 15px;
+  font-size: 24px;
+  line-height: 1.4;
+  color: #fff;
+  background: #e9546b;
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px #e5e4e6;
+  text-align: center;
+}
+footer .phone-number::before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f879";
+  left: 15px;
+  font-size: 24px;
+  color: #fff;
+  text-align: center;
+}
+
+/*# sourceMappingURL=menu.css.map */

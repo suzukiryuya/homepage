@@ -1,0 +1,163 @@
+%menu-navigation {
+  background-color: #EE0000;
+  text-align: center;
+  .menu-navi {
+    display: flex;
+    justify-content: center;
+  }
+  a {
+    color: white;
+    font-weight: 200;
+    font-size: 1.5em;
+    margin-right: 35px;
+    text-decoration: none;
+    &:hover {
+      color: lighten(yellow,5%);
+      text-decoration : underline;
+    }
+  }
+}
+/* こだわりの各コンテンツの共通部分 */
+%common-child {
+  margin: 0 auto;
+  flex: 1;
+  .concept-image {
+    width: 25vw;
+    height: 25vw;
+  }
+}
+
+/* 各こだわりの共通部分 */
+@mixin concept-common($image) {
+  text-align: center;
+  margin-bottom: 5%;
+  .concept-header {
+    background-image: url($image);
+    background-color:rgba(255,255,255,0.3);
+    background-blend-mode:lighten;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 700px;
+  }
+  .material { padding: 20px; }
+  .letter {
+    display     : inline-block;
+    font-size   : 160%;
+    font-family : serif;
+    font-weight : bold;
+    color       : #fff;
+    text-shadow : 2px  2px 10px #FF6600 ,
+                  -2px  2px 10px #FF6600 ,
+                  2px -2px 10px #FF6600 ,
+                  -2px -2px 10px #FF6600;
+  }
+  .wrapper {
+    display: flex;
+    width: 100%;
+  }
+  .concept-detail {
+    font-family: sans-serif;
+    font-size: 1.7em;
+    color: #FF6633;
+  }
+  .concept-text {
+    padding: 0 10%;
+    text-align: justify;
+  }
+}
+
+body {
+  width: 100%;
+  margin: 0 auto;
+  min-height: 100vh;
+  font-family: sans-serif;
+  display: grid;
+  grid-template:
+  "header" auto
+  "main" 1fr
+  "footer" auto;
+}
+ul { list-style: none; }
+$areas: header, main, footer;
+@each $area in $areas {
+  #{$area} {
+    grid-area: $area;
+  }
+}
+header {
+  @extend %menu-navigation;
+  .phone-number::before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f879";
+    color: #fff;
+    text-align: center;
+  }
+}
+.map-navi::before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f5a0";
+  color: #fff;
+  margin-right: 5px;
+  text-align: center;
+}
+main {
+  background-color: #FFEBCD;
+}
+.quality-wrapper {
+  margin: 0 auto;
+  width: 90%;
+}
+/* こだわり の文字 */
+.concept {
+  font-family: sans-serif;
+  margin-bottom: 5%;
+  text-align: center;
+  .border-bottom {
+    border-bottom: 5px solid red;
+    padding-bottom: 10px;
+  }
+}
+/* ラーメンのこだわり */
+.ramen {
+  @include concept-common("../img/miso-ramen.png");
+  .noodle, .soup, .miso {
+    @extend %common-child;
+  }
+}
+/* 餃子のこだわり */
+.gyoza {
+  @include concept-common("../img/concept-gyoza.png");
+  .filling-gyoza, .holding-gyoza, .keeping-gyoza {
+    @extend %common-child;
+  }
+}
+
+.food-image {
+  text-align: center;
+  margin-bottom: 5%;
+}
+
+footer {
+  @extend %menu-navigation;
+  .phone-wrapper {
+    margin: 2.5% 0px;
+  }
+  .phone-number {
+    padding: 15px;
+    font-size: 24px;
+    line-height: 1.4;
+    color: #fff;
+    background: #e9546b;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px #e5e4e6;
+    text-align: center;
+  }
+  .phone-number::before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f879";
+    left: 15px;
+    font-size: 24px;
+    color: #fff;
+    text-align: center;
+  }
+}
