@@ -161,6 +161,9 @@ input[name="menu"]{
 .impact {
   color: red;
 }
+.space {
+  margin-left: 15px;
+}
 
 footer {
   @extend %menu-navigation;

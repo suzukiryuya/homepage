@@ -229,6 +229,10 @@ input[name="menu"] {
   color: red;
 }
 
+.space {
+  margin-left: 15px;
+}
+
 footer .phone-wrapper {
   margin: 2.5% 0px;
 }
