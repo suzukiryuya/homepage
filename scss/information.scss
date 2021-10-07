@@ -111,9 +111,17 @@ header {
 }
 .image-wrapper {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
-
+.table-infomation {
+  display: inline-block;
+  text-align: left;
+  font-style: oblique;
+  font-size: 1.2em;
+}
+.number-table {
+  color: red;
+}
 /* 店舗情報の表 */
 .info-table, .recruit-table {
   margin: 0 auto;
