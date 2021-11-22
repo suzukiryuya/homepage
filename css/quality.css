@@ -95,6 +95,7 @@ main {
 }
 .ramen .material {
   padding: 20px;
+  font-size: 2.3em;
 }
 .ramen .letter {
   display: inline-block;
@@ -116,6 +117,9 @@ main {
 .ramen .concept-text {
   padding: 0 10%;
   text-align: justify;
+}
+.ramen p {
+  font-size: 1.3em;
 }
 .ramen .noodle, .ramen .soup, .ramen .miso {
   margin: 0 auto;
@@ -141,6 +145,7 @@ main {
 }
 .gyoza .material {
   padding: 20px;
+  font-size: 2.3em;
 }
 .gyoza .letter {
   display: inline-block;
@@ -162,6 +167,9 @@ main {
 .gyoza .concept-text {
   padding: 0 10%;
   text-align: justify;
+}
+.gyoza p {
+  font-size: 1.3em;
 }
 .gyoza .filling-gyoza, .gyoza .holding-gyoza, .gyoza .keeping-gyoza {
   margin: 0 auto;
