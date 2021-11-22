@@ -73,6 +73,7 @@ input[name="menu"]{
 #navi label {
   margin: 20px;
   cursor: pointer;
+  font-size: 1.5em;
 }
 #menu > div {
   display:none;
@@ -120,7 +121,7 @@ input[name="menu"]{
   place-items: center stretch;
   text-align: center;
   display: grid;
-  grid-template-columns: repeat(auto-fit, 300px);
+  grid-template-columns: repeat(auto-fit, 250px);
   gap: 20px;
 }
 #navi {
@@ -134,11 +135,20 @@ input[name="menu"]{
 
 @mixin menu-card($name: miso, $color: #000, $font-size: 3em) {
   .#{$name} {
-    > h2, > p {
+    &-name {
+      font-size: 1.6em;
       color: $color;
     }
-    > h2 {
+    .category-#{$name}{
+      color: $color;
       font-size: $font-size;
+    }
+    .category-concept ,.sentence{
+      color: $color;
+      font-size: 1.6em;
+      padding-left: 20px;
+      text-align: justify;
+      text-justify: auto;
     }
   }
 }
@@ -153,11 +163,7 @@ input[name="menu"]{
 @include menu-card(drink, #000, 2.2em);
 @include menu-card(takeout, #000, 2.2em);
 @include menu-card(lunch);
-.menu-concept {
-  padding-left: 20px;
-  text-align: justify;
-  text-justify: auto;
-}
+
 .impact {
   color: red;
 }
