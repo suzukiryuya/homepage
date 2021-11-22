@@ -1,4 +1,26 @@
 @charset "UTF-8";
+header, footer {
+  background-color: #EE0000;
+  text-align: center;
+}
+header .menu-navi, footer .menu-navi {
+  display: flex;
+  justify-content: center;
+}
+header a, footer a {
+  color: white;
+  font-weight: 200;
+  font-size: 1.5em;
+  margin-right: 35px;
+  text-decoration: none;
+}
+header a:hover, footer a:hover {
+  color: #ffff1a;
+  text-decoration: underline;
+}
+
+/* リンク先のボタン */
+/* 親要素 */
 body {
   font-family: sans-serif;
   width: 100%;
@@ -16,8 +38,6 @@ ul {
 header {
   border: 1px solid;
   grid-area: header;
-  background-color: #EE0000;
-  text-align: center;
 }
 
 main {
@@ -25,31 +45,21 @@ main {
   grid-area: main;
 }
 
-header .menu-navi {
-  display: flex;
-  justify-content: center;
+footer {
+  border: 1px solid;
+  grid-area: footer;
 }
-header a {
-  color: white;
-  font-weight: 200;
-  font-size: 1.5em;
-  margin-right: 35px;
-  text-decoration: none;
-}
-header a:hover {
-  color: #ffff1a;
-  text-decoration: underline;
-}
+
 header .phone-number::before {
   font-family: "Font Awesome 5 Free";
-  content: "";
+  content: "\f879";
   color: #fff;
   text-align: center;
 }
 
 .map-navi::before {
   font-family: "Font Awesome 5 Free";
-  content: "";
+  content: "\f5a0";
   color: #fff;
   margin-right: 5px;
   text-align: center;
@@ -245,27 +255,6 @@ header .phone-number::before {
   font-size: 2em;
 }
 
-footer {
-  border: 1px solid;
-  grid-area: footer;
-  background-color: #EE0000;
-  text-align: center;
-}
-footer .menu-navi {
-  display: flex;
-  justify-content: center;
-}
-footer a {
-  color: white;
-  font-weight: 200;
-  font-size: 1.5em;
-  margin-right: 35px;
-  text-decoration: none;
-}
-footer a:hover {
-  color: #ffff1a;
-  text-decoration: underline;
-}
 footer .phone-wrapper {
   margin: 2.5% 0px;
 }
@@ -281,9 +270,11 @@ footer .phone-number {
 }
 footer .phone-number::before {
   font-family: "Font Awesome 5 Free";
-  content: "";
+  content: "\f879";
   left: 15px;
   font-size: 24px;
   color: #fff;
   text-align: center;
 }
+
+/*# sourceMappingURL=index.css.map */
