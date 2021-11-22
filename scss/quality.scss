@@ -1,4 +1,4 @@
-%menu-navigation {
+@mixin menu-navigation {
   background-color: #EE0000;
   text-align: center;
   .menu-navi {
@@ -18,7 +18,7 @@
   }
 }
 /* こだわりの各コンテンツの共通部分 */
-%common-child {
+@mixin common-child {
   margin: 0 auto;
   flex: 1;
   .concept-image {
@@ -85,7 +85,7 @@ $areas: header, main, footer;
   }
 }
 header {
-  @extend %menu-navigation;
+  @include menu-navigation;
   .phone-number::before {
     font-family: "Font Awesome 5 Free";
     content: "\f879";
@@ -121,14 +121,14 @@ main {
 .ramen {
   @include concept-common("../img/miso-ramen.png");
   .noodle, .soup, .miso {
-    @extend %common-child;
+    @include common-child;
   }
 }
 /* 餃子のこだわり */
 .gyoza {
   @include concept-common("../img/concept-gyoza.png");
   .filling-gyoza, .holding-gyoza, .keeping-gyoza {
-    @extend %common-child;
+    @include common-child;
   }
 }
 
@@ -138,7 +138,7 @@ main {
 }
 
 footer {
-  @extend %menu-navigation;
+  @include menu-navigation;
   .phone-wrapper {
     margin: 2.5% 0px;
   }

@@ -1,4 +1,4 @@
-%menu-navigation {
+@mixin menu-navigation {
   background-color: #EE0000;
   text-align: center;
   .menu-navi {
@@ -46,7 +46,7 @@ $areas: header, main, footer;
   }
 }
 header {
-  @extend %menu-navigation;
+  @include menu-navigation;
   .phone-number::before {
     font-family: "Font Awesome 5 Free";
     content: "\f879";
@@ -169,7 +169,7 @@ header {
 
 
 footer {
-  @extend %menu-navigation;
+  @include menu-navigation;
   .phone-wrapper {
     margin: 2.5% 0px;
   }

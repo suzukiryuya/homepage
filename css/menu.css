@@ -1,25 +1,5 @@
 @charset "UTF-8";
 /* リンク先の表示 */
-header, footer {
-  background-color: #EE0000;
-  text-align: center;
-}
-header .menu-navi, footer .menu-navi {
-  display: flex;
-  justify-content: center;
-}
-header a, footer a {
-  color: white;
-  font-weight: 200;
-  font-size: 1.7em;
-  margin-right: 35px;
-  text-decoration: none;
-}
-header a:hover, footer a:hover {
-  color: #ffff1a;
-  text-decoration: underline;
-}
-
 body {
   font-family: sans-serif;
   width: 100%;
@@ -48,6 +28,25 @@ footer {
   grid-area: footer;
 }
 
+header {
+  background-color: #EE0000;
+  text-align: center;
+}
+header .menu-navi {
+  display: flex;
+  justify-content: center;
+}
+header a {
+  color: white;
+  font-weight: 200;
+  font-size: 1.7em;
+  margin-right: 35px;
+  text-decoration: none;
+}
+header a:hover {
+  color: #ffff1a;
+  text-decoration: underline;
+}
 header .phone-number::before {
   font-family: "Font Awesome 5 Free";
   content: "\f879";
@@ -233,6 +232,25 @@ input[name="menu"] {
   margin-left: 15px;
 }
 
+footer {
+  background-color: #EE0000;
+  text-align: center;
+}
+footer .menu-navi {
+  display: flex;
+  justify-content: center;
+}
+footer a {
+  color: white;
+  font-weight: 200;
+  font-size: 1.7em;
+  margin-right: 35px;
+  text-decoration: none;
+}
+footer a:hover {
+  color: #ffff1a;
+  text-decoration: underline;
+}
 footer .phone-wrapper {
   margin: 2.5% 0px;
 }
