@@ -94,7 +94,7 @@ header {
   text-shadow: 3px 3px 2px black, 0 0 2em red, 0 0 1em red;
   font-size: 4vw;
 }
-.concept-button { @include linkButton(white, orange, 2.5vw); }
+.concept-button { @include linkButton(black, orange, 2.5vw); }
 .concept-image { width: 100%; }
 
 /* お知らせ */
@@ -164,7 +164,6 @@ header {
   }
 }
 .takeout-header { font-size: 3em; }
-.takeout-menu-link { @include linkButton(white, orange, 1.4vw); }
 
 /* コロナ禍の取り組み */
 .attempt {
