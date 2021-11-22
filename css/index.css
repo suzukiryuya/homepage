@@ -10,7 +10,7 @@ header .menu-navi, footer .menu-navi {
 header a, footer a {
   color: white;
   font-weight: 200;
-  font-size: 1.5em;
+  font-size: 1.7em;
   margin-right: 35px;
   text-decoration: none;
 }
@@ -147,6 +147,9 @@ header .phone-number::before {
   display: grid;
   grid-template-columns: repeat(auto-fit, 1fr);
 }
+.takeout-header {
+  font-size: 2.4em;
+}
 .takeout-text {
   margin: 0 auto;
   margin-bottom: 5%;
@@ -170,10 +173,6 @@ header .phone-number::before {
   border-radius: 5%;
 }
 
-.takeout-header {
-  font-size: 3em;
-}
-
 /* コロナ禍の取り組み */
 .attempt {
   text-align: center;
@@ -184,6 +183,9 @@ header .phone-number::before {
   margin: 0 auto;
   margin-bottom: 30px;
   overflow-wrap: break-word;
+}
+.attempt-header {
+  font-size: 2em;
 }
 .attempt-container {
   display: grid;
@@ -216,6 +218,9 @@ header .phone-number::before {
 }
 
 /* ポイントカード */
+.point-header {
+  font-size: 2em;
+}
 .point-text {
   margin: 0 auto;
   margin-bottom: 5%;

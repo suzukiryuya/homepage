@@ -8,7 +8,7 @@
   a {
     color: white;
     font-weight: 200;
-    font-size: 1.5em;
+    font-size: 1.7em;
     margin-right: 35px;
     text-decoration: none;
     &:hover {
@@ -140,6 +140,9 @@ header {
   text-align: center;
   display: grid;
   grid-template-columns: repeat(auto-fit, 1fr);
+  &-header {
+    font-size: 2.4em;
+  }
   &-text {
     margin: 0 auto;
     margin-bottom: 5%;
@@ -163,7 +166,6 @@ header {
     }
   }
 }
-.takeout-header { font-size: 3em; }
 
 /* コロナ禍の取り組み */
 .attempt {
@@ -174,6 +176,9 @@ header {
     margin: 0 auto;
     margin-bottom: 30px;
     overflow-wrap: break-word;
+  }
+  &-header {
+    font-size: 2em;
   }
   &-container {
     display: grid;
@@ -207,6 +212,9 @@ header {
 /* ポイントカード */
 .point {
   @extend .takeout;
+  &-header {
+    font-size: 2em;
+  }
   &-text {
     margin: 0 auto;
     margin-bottom: 5%;
