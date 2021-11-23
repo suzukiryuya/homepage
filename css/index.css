@@ -33,7 +33,7 @@ footer {
   grid-area: footer;
 }
 
-header .menu-navi {
+.menu-navi {
   display: flex;
   justify-content: center;
 }
@@ -234,11 +234,6 @@ header a:hover {
 .impact {
   color: red;
   font-size: 2em;
-}
-
-footer .menu-navi {
-  display: flex;
-  justify-content: center;
 }
 
 footer a:hover {
