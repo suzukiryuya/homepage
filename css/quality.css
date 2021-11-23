@@ -86,7 +86,6 @@ main {
   margin-bottom: 5%;
 }
 .concept-header {
-  background-image: url("../img/miso-ramen.png");
   background-color: rgba(255, 255, 255, 0.3);
   background-blend-mode: lighten;
   background-size: cover;
@@ -94,7 +93,7 @@ main {
   height: 700px;
 }
 .ramen .concept-header {
-  background-image: url("../img/miso-ramen.png");
+  background-image: url("../img/miso-ramen.jpg");
 }
 
 .material {
@@ -140,7 +139,7 @@ main {
 }
 
 .gyoza .concept-header {
-  background-image: url("../img/concept-gyoza.png");
+  background-image: url("../img/concept-gyoza.jpg");
 }
 
 .filling-gyoza, .holding-gyoza, .keeping-gyoza {
