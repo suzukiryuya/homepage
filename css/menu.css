@@ -348,6 +348,13 @@ footer a:hover {
 footer .phone-wrapper {
   margin: 2.5% 0px;
 }
+footer .guidance-sentence {
+  color: white;
+  font-size: 1.3em;
+}
+footer .phone-guidance {
+  margin-bottom: 7%;
+}
 footer .phone-number {
   padding: 15px;
   font-size: 24px;
