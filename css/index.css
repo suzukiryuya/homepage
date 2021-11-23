@@ -1,6 +1,4 @@
 @charset "UTF-8";
-/* リンク先のボタン */
-/* 親要素 */
 body {
   font-family: sans-serif;
   width: 100%;
@@ -14,54 +12,50 @@ ul {
   list-style: none;
 }
 
-/* 子要素 */
-header {
+header, footer {
   border: 1px solid;
+  background-color: #EE0000;
+  text-align: center;
+}
+header {
   grid-area: header;
 }
-
 main {
   border: 1px solid;
   grid-area: main;
 }
-
 footer {
-  border: 1px solid;
   grid-area: footer;
 }
 
-header {
-  background-color: #EE0000;
-  text-align: center;
-}
-header .menu-navi {
+.menu-navi {
   display: flex;
   justify-content: center;
 }
-header a {
+header a, footer a {
   color: white;
   font-weight: 200;
   font-size: 1.7em;
   margin-right: 35px;
   text-decoration: none;
 }
+
 header a:hover {
   color: #ffff1a;
   text-decoration: underline;
 }
-header .phone-number::before {
+.phone-number::before, .map-navi::before {
   font-family: "Font Awesome 5 Free";
-  content: "\f879";
   color: #fff;
   text-align: center;
 }
+.phone-number::before {
+  content: "\f879";
+}
 
 .map-navi::before {
-  font-family: "Font Awesome 5 Free";
   content: "\f5a0";
-  color: #fff;
   margin-right: 5px;
-  text-align: center;
 }
 
 /* コンセプト(店舗情報と辛ねぎ味噌) */
@@ -149,22 +143,25 @@ header .phone-number::before {
 .takeout-header {
   font-size: 2.4em;
 }
-.takeout-text {
+.takeout-text,  .point-text{
   margin: 0 auto;
   margin-bottom: 5%;
   width: 80%;
 }
+
 .takeout-text p:not(:last-child) {
   letter-spacing: 1px;
   font-size: 1.4em;
   text-align: justify;
 }
-.takeout-image {
-  display: flex;
-  align-items: center;
+.takeout-image, .point-image {
   margin: 0 auto;
   margin-bottom: 5%;
   width: 100%;
+}
+.takeout-image {
+  display: flex;
+  align-items: center;
 }
 .takeout-image img {
   width: 50%;
@@ -220,20 +217,12 @@ header .phone-number::before {
 .point-header {
   font-size: 2em;
 }
-.point-text {
-  margin: 0 auto;
-  margin-bottom: 5%;
-  width: 80%;
-}
+
 .point-text p {
   text-align: justify;
   text-justify: auto;
 }
-.point-image {
-  margin: 0 auto;
-  margin-bottom: 5%;
-  width: 100%;
-}
+
 .point-image img {
   width: 50%;
   border-radius: 5%;
@@ -244,51 +233,35 @@ header .phone-number::before {
   font-size: 2em;
 }
 
-footer {
-  background-color: #EE0000;
-  text-align: center;
-}
-footer .menu-navi {
-  display: flex;
-  justify-content: center;
-}
-footer a {
-  color: white;
-  font-weight: 200;
-  font-size: 1.7em;
-  margin-right: 35px;
-  text-decoration: none;
-}
 footer a:hover {
   color: #ffff1a;
   text-decoration: underline;
 }
-footer .phone-wrapper {
+.phone-wrapper {
   margin: 2.5% 0px;
 }
-footer .guidance-sentence {
+.guidance-sentence {
   color: white;
 }
-footer .phone-guidance {
+.phone-guidance {
   margin-bottom: 7%;
 }
-footer .phone-number {
-  padding: 15px;
-  font-size: 24px;
-  line-height: 1.4;
+.footer-phone,  .footer-phone::before{
   color: #fff;
+  font-size: 24px;
+  text-align: center;
+}
+.footer-phone {
+  padding: 15px;
+  line-height: 1.4;
   background: #e9546b;
   border-radius: 5px;
   box-shadow: 5px 5px 5px #e5e4e6;
-  text-align: center;
 }
-footer .phone-number::before {
+
+.footer-phone::before {
   font-family: "Font Awesome 5 Free";
   content: "\f879";
   left: 15px;
-  font-size: 24px;
-  color: #fff;
-  text-align: center;
 }
-
 /*# sourceMappingURL=index.css.map */

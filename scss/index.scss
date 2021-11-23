@@ -250,7 +250,7 @@ footer {
   .phone-guidance {
     margin-bottom: 7%;
   }
-  .phone-number {
+  .footer-phone {
     padding: 15px;
     font-size: 24px;
     line-height: 1.4;
@@ -260,7 +260,7 @@ footer {
     box-shadow: 5px 5px 5px #e5e4e6;
     text-align: center;
   }
-  .phone-number::before {
+  .footer-phone::before {
     font-family: "Font Awesome 5 Free";
     content: "\f879";
     left: 15px;

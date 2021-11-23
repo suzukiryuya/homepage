@@ -16,6 +16,8 @@ ul {
 
 header {
   grid-area: header;
+  background-color: #EE0000;
+  text-align: center;
 }
 
 main {
@@ -24,17 +26,16 @@ main {
 
 footer {
   grid-area: footer;
-}
-
-header {
   background-color: #EE0000;
   text-align: center;
 }
-header .menu-navi {
+
+.menu-navi {
   display: flex;
   justify-content: center;
 }
-header a {
+
+header a, footer a {
   color: white;
   font-weight: 200;
   font-size: 1.7em;
@@ -45,19 +46,18 @@ header a:hover {
   color: #ffff1a;
   text-decoration: underline;
 }
-header .phone-number::before {
+.phone-number::before, .map-navi::before {
   font-family: "Font Awesome 5 Free";
-  content: "\f879";
   color: #fff;
   text-align: center;
 }
+.phone-number::before {
+  content: "\f879";
+}
 
 .map-navi::before {
-  font-family: "Font Awesome 5 Free";
   content: "\f5a0";
-  color: #fff;
   margin-right: 5px;
-  text-align: center;
 }
 
 main {
@@ -85,7 +85,7 @@ main {
   text-align: center;
   margin-bottom: 5%;
 }
-.ramen .concept-header {
+.concept-header {
   background-image: url("../img/miso-ramen.png");
   background-color: rgba(255, 255, 255, 0.3);
   background-blend-mode: lighten;
@@ -93,11 +93,15 @@ main {
   background-repeat: no-repeat;
   height: 700px;
 }
-.ramen .material {
+.ramen .concept-header {
+  background-image: url("../img/miso-ramen.png");
+}
+
+.material {
   padding: 20px;
   font-size: 2.3em;
 }
-.ramen .letter {
+.letter {
   display: inline-block;
   font-size: 160%;
   font-family: serif;
@@ -105,27 +109,26 @@ main {
   color: #fff;
   text-shadow: 2px  2px 10px #FF6600 , -2px  2px 10px #FF6600 , 2px -2px 10px #FF6600 , -2px -2px 10px #FF6600;
 }
-.ramen .wrapper {
+
+.wrapper {
   display: flex;
   width: 100%;
 }
-.ramen .concept-detail {
+.concept-detail {
   font-family: sans-serif;
   font-size: 1.7em;
   color: #FF6633;
 }
-.ramen .concept-text {
+.concept-text {
   padding: 0 10%;
   text-align: justify;
 }
-.ramen p {
-  font-size: 1.3em;
-}
-.ramen .noodle, .ramen .soup, .ramen .miso {
+
+.noodle, .soup, .miso {
   margin: 0 auto;
   flex: 1;
 }
-.ramen .noodle .concept-image, .ramen .soup .concept-image, .ramen .miso .concept-image {
+.concept-image {
   width: 25vw;
   height: 25vw;
 }
@@ -135,49 +138,14 @@ main {
   text-align: center;
   margin-bottom: 5%;
 }
+
 .gyoza .concept-header {
   background-image: url("../img/concept-gyoza.png");
-  background-color: rgba(255, 255, 255, 0.3);
-  background-blend-mode: lighten;
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 700px;
 }
-.gyoza .material {
-  padding: 20px;
-  font-size: 2.3em;
-}
-.gyoza .letter {
-  display: inline-block;
-  font-size: 160%;
-  font-family: serif;
-  font-weight: bold;
-  color: #fff;
-  text-shadow: 2px  2px 10px #FF6600 , -2px  2px 10px #FF6600 , 2px -2px 10px #FF6600 , -2px -2px 10px #FF6600;
-}
-.gyoza .wrapper {
-  display: flex;
-  width: 100%;
-}
-.gyoza .concept-detail {
-  font-family: sans-serif;
-  font-size: 1.7em;
-  color: #FF6633;
-}
-.gyoza .concept-text {
-  padding: 0 10%;
-  text-align: justify;
-}
-.gyoza p {
-  font-size: 1.3em;
-}
-.gyoza .filling-gyoza, .gyoza .holding-gyoza, .gyoza .keeping-gyoza {
+
+.filling-gyoza, .holding-gyoza, .keeping-gyoza {
   margin: 0 auto;
   flex: 1;
-}
-.gyoza .filling-gyoza .concept-image, .gyoza .holding-gyoza .concept-image, .gyoza .keeping-gyoza .concept-image {
-  width: 25vw;
-  height: 25vw;
 }
 
 .food-image {
@@ -185,51 +153,36 @@ main {
   margin-bottom: 5%;
 }
 
-footer {
-  background-color: #EE0000;
-  text-align: center;
-}
-footer .menu-navi {
-  display: flex;
-  justify-content: center;
-}
-footer a {
-  color: white;
-  font-weight: 200;
-  font-size: 1.7em;
-  margin-right: 35px;
-  text-decoration: none;
-}
 footer a:hover {
   color: #ffff1a;
   text-decoration: underline;
 }
-footer .phone-wrapper {
+.phone-wrapper {
   margin: 2.5% 0px;
 }
-footer .guidance-sentence {
+.guidance-sentence {
   color: white;
 }
-footer .phone-guidance {
+.phone-guidance {
   margin-bottom: 7%;
 }
-footer .phone-number {
-  padding: 15px;
-  font-size: 24px;
-  line-height: 1.4;
+.footer-phone,  .footer-phone::before{
   color: #fff;
+  font-size: 24px;
+  text-align: center;
+}
+.footer-phone {
+  padding: 15px;
+  line-height: 1.4;
   background: #e9546b;
   border-radius: 5px;
   box-shadow: 5px 5px 5px #e5e4e6;
-  text-align: center;
 }
-footer .phone-number::before {
+
+.footer-phone::before {
   font-family: "Font Awesome 5 Free";
   content: "\f879";
   left: 15px;
-  font-size: 24px;
-  color: #fff;
-  text-align: center;
 }
 
 /*# sourceMappingURL=quality.css.map */
