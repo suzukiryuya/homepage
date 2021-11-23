@@ -120,12 +120,12 @@ header a:hover {
   padding: 20px 50px;
 }
 
-.notice-content li {
+.notice-wrapper li {
   border-top: 0.5px solid;
   border-bottom: 0.5px solid;
   padding-top: 20px;
 }
-.notice-content li::before {
+.notice-wrapper li::before {
   content: "New";
   margin-left: 5px;
   color: #fff;
