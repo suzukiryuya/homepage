@@ -65,7 +65,7 @@ header {
 .infomation-wrapper {
   margin: 0 auto;
   margin-bottom: 3%;
-  width: 80%;
+  width: 95%;
 }
 /* 店舗情報 の部分 */
 .information-header, .recruit-header {
@@ -166,7 +166,6 @@ header {
   text-justify: auto;
   width: 80%;
 }
-
 
 footer {
   @include menu-navigation;
