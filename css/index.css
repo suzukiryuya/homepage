@@ -64,6 +64,13 @@ header a:hover {
   margin-right: 5px;
 }
 
+.takeout-header, .notice-header, .attempt-header {
+  font-size: 6vw;
+}
+.point-header {
+  font-size: 5vw;
+}
+
 /* コンセプト(店舗情報と辛ねぎ味噌) */
 .concept {
   position: relative;
@@ -114,18 +121,18 @@ header a:hover {
   text-align: center;
 }
 
-.notice-wrapper {
+.notice-list {
   background-color: #EEEEEE;
   margin: 0 10%;
   padding: 20px 50px;
 }
 
-.notice-wrapper li {
+.notice-list li {
   border-top: 0.5px solid;
   border-bottom: 0.5px solid;
   padding-top: 20px;
 }
-.notice-wrapper li::before {
+.notice-list li::before {
   content: "New";
   margin-left: 5px;
   color: #fff;
@@ -145,9 +152,6 @@ header a:hover {
   text-align: center;
   display: grid;
   grid-template-columns: repeat(auto-fit, 1fr);
-}
-.takeout-header {
-  font-size: 2.4em;
 }
 .takeout-text, .point-text {
   margin: 0 auto;
@@ -185,9 +189,6 @@ header a:hover {
   margin-bottom: 30px;
   overflow-wrap: break-word;
 }
-.attempt-header {
-  font-size: 2em;
-}
 .attempt-container {
   display: grid;
   grid-template-columns: repeat(2, auto);
@@ -215,13 +216,9 @@ header a:hover {
   border-bottom: 3px solid red;
   color: red;
   font-family: serif;
-  font-size: 1.4em;
 }
 
 /* ポイントカード */
-.point-header {
-  font-size: 2em;
-}
 .point-text p {
   text-align: justify;
   text-justify: auto;
