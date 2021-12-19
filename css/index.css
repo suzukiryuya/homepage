@@ -113,7 +113,7 @@ header a:hover {
 .notice {
   background-color: #FFDBC9;
   margin-bottom: 5%;
-  padding: 5% 0;
+  padding: 10% 0;
 }
 .notice-header {
   font-family: sans-serif;
@@ -141,6 +141,10 @@ header a:hover {
 }
 .notice-topic {
   display: inline;
+  font-size: 3vw;
+}
+.notice-text {
+  font-size: 25px;
 }
 
 /* お持ち帰り */
@@ -158,9 +162,9 @@ header a:hover {
   margin-bottom: 5%;
   width: 80%;
 }
-.takeout-text p:not(:last-child) {
+.takeout-sentence {
   letter-spacing: 1px;
-  font-size: 1.4em;
+  font-size: 2em;
   text-align: justify;
 }
 .takeout-image, .point-image {
@@ -184,10 +188,10 @@ header a:hover {
   margin-bottom: 40px;
   padding: 13% 0;
 }
-.attempt p {
-  font-size: 1.2em;
+.attempt-sentence {
+  font-size: 25px;
   margin: 0 auto;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
   overflow-wrap: break-word;
 }
 .attempt-container {
@@ -220,7 +224,8 @@ header a:hover {
 }
 
 /* ポイントカード */
-.point-text p {
+.point-sentence {
+  font-size: 20px;
   text-align: justify;
   text-justify: auto;
 }
