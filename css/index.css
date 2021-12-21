@@ -64,7 +64,7 @@ header a:hover {
   margin-right: 5px;
 }
 
-.takeout-title, .news-header, .attempt-header {
+.takeout-title, .news-header, .attempt-title {
   font-size: 6vw;
 }
 .point-header {
@@ -188,7 +188,7 @@ header a:hover {
   margin-bottom: 40px;
   padding: 13% 0;
 }
-.attempt-sentence {
+.attempt-subtitle {
   font-size: 25px;
   margin: 0 auto;
   margin-bottom: 50px;
