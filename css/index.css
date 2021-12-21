@@ -64,6 +64,7 @@ header a:hover {
   margin-right: 5px;
 }
 
+/* 各部分のタイトル文字の大きさを指定 */
 .takeout-title, .news-title, .attempt-title {
   font-size: 6vw;
 }
@@ -82,14 +83,12 @@ header a:hover {
   top: 50%;
   transform: translate(-50%, -50%);
 }
-
 .concept-text {
   color: white;
   font-family: serif;
   text-shadow: 3px 3px 2px black, 0 0 2em red, 0 0 1em red;
   font-size: 5vw;
 }
-
 .menu-link-button {
   border-radius: 10px;
   background-color: orange;
@@ -104,7 +103,6 @@ header a:hover {
   color: black;
   border: 3px solid;
 }
-
 .concept-img {
   width: 100%;
 }
@@ -112,8 +110,7 @@ header a:hover {
 /* お知らせ */
 .news {
   background-color: #FFDBC9;
-  margin-bottom: 5%;
-  padding: 10% 0;
+  padding: 13% 0;
 }
 .news-title {
   font-family: sans-serif;
@@ -155,7 +152,7 @@ header a:hover {
   text-align: center;
   display: grid;
   grid-template-columns: repeat(auto-fit, 1fr);
-  padding: 13% 0;
+  padding: 15% 0;
 }
 .takeout-text, .point-text {
   margin: 0 auto;
@@ -185,8 +182,7 @@ header a:hover {
 /* コロナ禍の取り組み */
 .attempt {
   text-align: center;
-  margin-bottom: 40px;
-  padding: 13% 0;
+  padding: 15% 0;
 }
 .attempt-subtitle {
   font-size: 25px;
@@ -216,7 +212,6 @@ header a:hover {
   font-weight: 400;
   padding: 0 30px;
 }
-
 .attempt-border {
   border-bottom: 3px solid red;
   color: red;
@@ -233,7 +228,6 @@ header a:hover {
   width: 80%;
   border-radius: 5%;
 }
-
 .impact {
   color: red;
   font-size: 2em;
