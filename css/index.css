@@ -64,10 +64,10 @@ header a:hover {
   margin-right: 5px;
 }
 
-.takeout-title, .news-header, .attempt-header {
+.takeout-title, .news-title, .attempt-header {
   font-size: 6vw;
 }
-.point-header {
+.point-title {
   font-size: 5vw;
 }
 
@@ -115,7 +115,7 @@ header a:hover {
   margin-bottom: 5%;
   padding: 10% 0;
 }
-.news-header {
+.news-title {
   font-family: sans-serif;
   text-align: center;
 }
@@ -224,7 +224,7 @@ header a:hover {
 }
 
 /* ポイントカード */
-.point-sentence {
+.point-subtitle {
   font-size: 20px;
   text-align: justify;
   text-justify: auto;
