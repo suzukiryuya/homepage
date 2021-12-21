@@ -64,7 +64,7 @@ header a:hover {
   margin-right: 5px;
 }
 
-.takeout-header, .news-header, .attempt-header {
+.takeout-title, .news-header, .attempt-header {
   font-size: 6vw;
 }
 .point-header {
@@ -90,7 +90,7 @@ header a:hover {
   font-size: 5vw;
 }
 
-.concept-button {
+.menu-link-button {
   border-radius: 10px;
   background-color: orange;
   color: black;
@@ -100,7 +100,7 @@ header a:hover {
   text-decoration: none;
   transition: all 1s;
 }
-.concept-button:hover {
+.menu-link-button:hover {
   color: black;
   border: 3px solid;
 }
@@ -162,21 +162,21 @@ header a:hover {
   margin-bottom: 5%;
   width: 80%;
 }
-.takeout-sentence {
+.takeout-subtitle {
   letter-spacing: 1px;
   font-size: 2em;
   text-align: justify;
 }
-.takeout-image, .point-image {
+.takeout-picture, .point-image {
   margin: 0 auto;
   margin-bottom: 5%;
   width: 100%;
 }
-.takeout-image {
+.takeout-picture {
   display: flex;
   align-items: center;
 }
-.takeout-image img {
+.takeout-img {
   width: 50%;
   height: 100%;
   border-radius: 5%;
