@@ -75,7 +75,7 @@ header a:hover {
 .concept {
   position: relative;
 }
-.concept-text {
+.concept-title {
   text-align: center;
   position: absolute;
   left: 50%;
@@ -83,7 +83,7 @@ header a:hover {
   transform: translate(-50%, -50%);
 }
 
-.concept-impact {
+.concept-text {
   color: white;
   font-family: serif;
   text-shadow: 3px 3px 2px black, 0 0 2em red, 0 0 1em red;
