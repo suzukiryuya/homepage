@@ -64,7 +64,7 @@ header a:hover {
   margin-right: 5px;
 }
 
-.takeout-header, .notice-header, .attempt-header {
+.takeout-header, .news-header, .attempt-header {
   font-size: 6vw;
 }
 .point-header {
@@ -110,28 +110,28 @@ header a:hover {
 }
 
 /* お知らせ */
-.notice {
+.news {
   background-color: #FFDBC9;
   margin-bottom: 5%;
   padding: 10% 0;
 }
-.notice-header {
+.news-header {
   font-family: sans-serif;
   text-align: center;
 }
 
-.notice-list {
+.news-list {
   background-color: #EEEEEE;
   margin: 0 10%;
   padding: 20px 50px;
 }
 
-.notice-list li {
+.news-list li {
   border-top: 0.5px solid;
   border-bottom: 0.5px solid;
   padding-top: 20px;
 }
-.notice-list li::before {
+.news-list li::before {
   content: "New";
   margin-left: 5px;
   color: #fff;
@@ -139,11 +139,11 @@ header a:hover {
   padding: 1px 3px;
   font-size: 12px;
 }
-.notice-topic {
+.news-topic {
   display: inline;
   font-size: 3vw;
 }
-.notice-text {
+.news-text {
   font-size: 25px;
 }
 
