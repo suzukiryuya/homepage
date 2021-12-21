@@ -64,7 +64,11 @@ header a:hover {
   margin-right: 5px;
 }
 
+<<<<<<< HEAD
 .takeout-title, .news-title, .attempt-header {
+=======
+.takeout-title, .news-header, .attempt-title {
+>>>>>>> rename-attempt-class
   font-size: 6vw;
 }
 .point-title {
@@ -188,7 +192,7 @@ header a:hover {
   margin-bottom: 40px;
   padding: 13% 0;
 }
-.attempt-sentence {
+.attempt-subtitle {
   font-size: 25px;
   margin: 0 auto;
   margin-bottom: 50px;
