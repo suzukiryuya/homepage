@@ -142,13 +142,13 @@ header a:hover {
   background-color: #FF9966	;
 }
 .campaign {
-  background-color: red
+  background-color: red;
 }
 .news-topic {
   font-size: 2rem;
 }
 .news-text {
-  font-size: 20px;
+  font-size: 1.6rem;
 }
 
 /* お持ち帰り */
