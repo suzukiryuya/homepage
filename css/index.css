@@ -40,7 +40,7 @@ footer {
 header a, footer a {
   color: white;
   font-weight: 200;
-  font-size: 1.7em;
+  font-size: 1.7rem;
   margin-right: 35px;
   text-decoration: none;
 }
@@ -48,7 +48,6 @@ header a:hover {
   color: #ffff1a;
   text-decoration: underline;
 }
-
 
 .phone-number::before, .map-navi::before, .footer-phone::before {
   font-family: "Font Awesome 5 Free";
@@ -130,11 +129,11 @@ header a:hover {
 
 .news-update-date {
   margin-right: 10px;
-  font: 1rem "Fira Sans", sans-serif;
+  font: 0.8rem "Fira Sans", sans-serif;
 }
 .news-tag {
   color: white;
-  font: bolder 1rem sans-serif;
+  font: bolder 0.8rem sans-serif;
   margin-right: 10px;
   padding: 3px 5px;
 }
@@ -148,10 +147,7 @@ header a:hover {
   background-color: green;
 }
 .news-topic {
-  font-size: 2rem;
-}
-.news-text {
-  font-size: 1.6rem;
+  font-size: 1.5rem;
 }
 
 /* お持ち帰り */
@@ -170,8 +166,7 @@ header a:hover {
   width: 80%;
 }
 .takeout-subtitle {
-  letter-spacing: 1px;
-  font-size: 2em;
+  font-size: 2rem;
   text-align: justify;
 }
 .takeout-picture, .point-picture {
@@ -217,9 +212,7 @@ header a:hover {
   margin-bottom: 5px;
 }
 .attempt-item h4 {
-  font-size: 1.4em;
-  font-family: sans-serif;
-  font-weight: 400;
+  font: 400 1.4em sans-serif;
   padding: 0 30px;
 }
 .attempt-border {
