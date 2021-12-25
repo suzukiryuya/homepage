@@ -110,7 +110,7 @@ header a:hover {
 /* お知らせ */
 .news {
   background-color: #FFDBC9;
-  padding: 13% 0;
+  padding: 10% 0;
 }
 .news-title {
   font-family: sans-serif;
@@ -119,29 +119,36 @@ header a:hover {
 
 .news-list {
   background-color: #EEEEEE;
-  margin: 0 10%;
+  margin: 0 5%;
   padding: 20px 50px;
 }
 
 .news-list li {
-  border-top: 0.5px solid;
-  border-bottom: 0.5px solid;
+  border-bottom: 1px solid;
   padding-top: 20px;
 }
-.news-list li::before {
-  content: "New";
-  margin-left: 5px;
-  color: #fff;
-  background: red;
-  padding: 1px 3px;
-  font-size: 12px;
+
+.news-update-date {
+  margin-right: 10px;
+  font: 1rem "Fira Sans", sans-serif;
+}
+.news-tag {
+  color: white;
+  font: bolder 1rem sans-serif;
+  margin-right: 10px;
+  padding: 3px 5px;
+}
+.notice {
+  background-color: #FF9966	;
+}
+.campaign {
+  background-color: red;
 }
 .news-topic {
-  display: inline;
-  font-size: 3vw;
+  font-size: 2rem;
 }
 .news-text {
-  font-size: 25px;
+  font-size: 1.6rem;
 }
 
 /* お持ち帰り */
@@ -152,7 +159,7 @@ header a:hover {
   text-align: center;
   display: grid;
   grid-template-columns: repeat(auto-fit, 1fr);
-  padding: 15% 0;
+  padding: 10% 0;
 }
 .takeout-text, .point-text {
   margin: 0 auto;
@@ -182,7 +189,7 @@ header a:hover {
 /* コロナ禍の取り組み */
 .attempt {
   text-align: center;
-  padding: 15% 0;
+  padding: 10% 0;
 }
 .attempt-subtitle {
   font-size: 25px;
