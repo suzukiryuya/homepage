@@ -144,6 +144,9 @@ header a:hover {
 .campaign {
   background-color: red;
 }
+.infomation {
+  background-color: green;
+}
 .news-topic {
   font-size: 2rem;
 }
