@@ -159,7 +159,7 @@ header a:hover {
   text-align: center;
   display: grid;
   grid-template-columns: repeat(auto-fit, 1fr);
-  padding: 15% 0;
+  padding: 10% 0;
 }
 .takeout-text, .point-text {
   margin: 0 auto;
@@ -189,7 +189,7 @@ header a:hover {
 /* コロナ禍の取り組み */
 .attempt {
   text-align: center;
-  padding: 15% 0;
+  padding: 10% 0;
 }
 .attempt-subtitle {
   font-size: 25px;
