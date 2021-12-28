@@ -33,8 +33,7 @@ footer {
 
 header a, footer a {
   color: white;
-  font-weight: 200;
-  font-size: 1.7em;
+  font: bold 1.7rem sans-serif;
   margin-right: 35px;
   text-decoration: none;
 }
@@ -81,7 +80,7 @@ header a:hover {
   padding-bottom: 10px;
 }
 
-/* 外観と内装 */
+/* 外観と内装の情報 */
 .exterior, .interior {
   margin-bottom: 5%;
   text-align: center;
@@ -114,26 +113,19 @@ header a:hover {
 }
 
 .information-content, .recruit-content {
-  font-size: 1.2em;
+  font-size: 1.45rem;
   margin: auto;
   text-align: justify;
   width: 80%;
 }
-
-.information-content {
-  font-size: 1.2em;
-}
-
 .image-wrapper {
   display: flex;
   justify-content: center;
 }
-
 .table-information {
   display: inline-block;
   text-align: left;
-  font-style: oblique;
-  font-size: 1.2em;
+  font-size: 1.585rem;
 }
 
 .number-table {
@@ -168,6 +160,10 @@ header a:hover {
   text-align: center;
 }
 
+/* 採用情報の表 */ 
+.recruit-content {
+  width: 80%;
+}
 .store-table, .recruitment {
   width: 100%;
   margin: 0 auto;
@@ -177,22 +173,20 @@ header a:hover {
 
 .store-table td, .recruitment td, .store-table th, .recruitment th {
   border: solid 3px white;
-  font-size: 1.3em;
+  font-size: 1.5rem;
   height: 70px;
   padding: 0 10px;
 }
 
 .store-table th, .recruitment th {
+  padding: 2.3%;
+  width: 20%;
   color: white;
   background-color: #FF0033;
 }
 
 .store-table td, .recruitment td {
   background-color: #DDDDDD;
-}
-
-.recruit-content {
-  width: 80%;
 }
 
 footer a:hover {
@@ -204,6 +198,7 @@ footer a:hover {
 }
 .guidance-sentence {
   color: white;
+  font-size: 24px;
 }
 .phone-guidance {
   margin-bottom: 7%;
