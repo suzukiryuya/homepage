@@ -70,7 +70,8 @@ main {
 
 /* こだわり の文字 */
 .concept {
-  margin-bottom: 5%;
+  font-size: 2rem;
+  margin-bottom: 7%;
   text-align: center;
 }
 .concept .border-bottom {
