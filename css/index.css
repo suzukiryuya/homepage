@@ -149,6 +149,10 @@ header a:hover {
 .news-topic {
   font-size: 1.5rem;
 }
+.emphasize {
+  color: red;
+  font-size: 1.2rem;
+}
 
 /* お持ち帰り */
 .takeout, .point {
