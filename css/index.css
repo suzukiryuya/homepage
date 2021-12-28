@@ -245,10 +245,10 @@ footer a:hover {
   margin: 2.5% 0px;
 }
 .guidance-sentence {
+	font-size: 24px;
   color: white;
 }
 .phone-guidance {
-	font-size: 24px;
   margin-bottom: 7%;
 }
 .footer-phone {
