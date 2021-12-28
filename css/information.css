@@ -4,7 +4,7 @@ body {
   width: 100%;
   margin: 0 auto;
   min-height: 100vh;
-  font-family: sans-serif;
+  font-family: Verdana, Roboto, "Droid Sans", "游ゴシック", YuGothic, "メイリオ", Meiryo, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "ＭＳ Ｐゴシック", sans-serif;
   display: grid;
   grid-template: "header" auto "main" 1fr "footer" auto;
 }
@@ -71,7 +71,6 @@ header a:hover {
 
 /* 店舗情報 の部分 */
 .information-header, .recruit-header {
-  font-family: sans-serif;
   margin-bottom: 60px;
   text-align: center;
 }
@@ -178,7 +177,6 @@ header a:hover {
 
 .store-table td, .recruitment td, .store-table th, .recruitment th {
   border: solid 3px white;
-  font-family: system-ui;
   font-size: 1.3em;
   height: 70px;
   padding: 0 10px;
