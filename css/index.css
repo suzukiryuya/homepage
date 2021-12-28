@@ -39,8 +39,7 @@ footer {
 }
 header a, footer a {
   color: white;
-  font-weight: 200;
-  font-size: 1.7rem;
+	font: bold 1.7rem sans-serif;
   margin-right: 35px;
   text-decoration: none;
 }
@@ -84,9 +83,9 @@ header a:hover {
 }
 .concept-text {
   color: white;
+	font-size: 5vw;
   font-family: serif;
   text-shadow: 3px 3px 2px black, 0 0 2em red, 0 0 1em red;
-  font-size: 5vw;
 }
 .menu-link-button {
   border-radius: 10px;
@@ -149,7 +148,7 @@ header a:hover {
 }
 .emphasize {
   color: red;
-  font-size: 1.2rem;
+  font-size: 1.35rem;
 }
 
 /* お持ち帰り */
@@ -192,7 +191,7 @@ header a:hover {
   padding: 10% 0;
 }
 .attempt-subtitle {
-  font-size: 25px;
+  font-size: 1.5rem;
   margin: 0 auto;
   margin-bottom: 50px;
   overflow-wrap: break-word;
@@ -214,7 +213,7 @@ header a:hover {
   margin-bottom: 5px;
 }
 .attempt-item h4 {
-  font: 400 1.4em sans-serif;
+  font: bold 1.4em sans-serif;
   padding: 0 30px;
 }
 .attempt-border {
@@ -225,7 +224,7 @@ header a:hover {
 
 /* ポイントカード */
 .point-subtitle {
-  font-size: 20px;
+  font-size: 1.5rem;
   text-align: justify;
   text-justify: auto;
 }
@@ -249,6 +248,7 @@ footer a:hover {
   color: white;
 }
 .phone-guidance {
+	font-size: 24px;
   margin-bottom: 7%;
 }
 .footer-phone {
