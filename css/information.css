@@ -69,7 +69,8 @@ header a:hover {
 }
 
 /* 店舗情報 の部分 */
-.information-header, .recruit-header {
+.information-header-title, .recruit-header-title {
+  font-size: 2rem;
   margin-bottom: 60px;
   text-align: center;
 }
@@ -160,7 +161,7 @@ header a:hover {
   text-align: center;
 }
 
-/* 採用情報の表 */ 
+/* 採用情報の表 */
 .recruit-content {
   width: 80%;
 }
