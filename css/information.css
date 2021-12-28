@@ -63,7 +63,7 @@ header a:hover {
   margin-right: 5px;
 }
 
-.infomation-wrapper {
+.information-wrapper {
   margin: 0 auto;
   margin-bottom: 3%;
   width: 95%;
@@ -86,12 +86,12 @@ header a:hover {
   margin-bottom: 5%;
   text-align: center;
 }
-.exterior .infomation-image, .interior .infomation-image {
+.exterior .information-image, .interior .information-image {
   background: #fff;
   width: 90%;
 }
 
-.infomation-index {
+.information-index {
   font-family: Helvetica;
   color: white;
   /*文字色*/
@@ -107,20 +107,20 @@ header a:hover {
   border-radius: 25px 0px 0px 25px;
   /*左側の角を丸く*/
 }
-.infomation-index::before {
+.information-index::before {
   content: '●';
   color: white;
   margin-right: 8px;
 }
 
-.infomation-content, .recruit-content {
+.information-content, .recruit-content {
   font-size: 1.2em;
   margin: auto;
   text-align: justify;
   width: 80%;
 }
 
-.infomation-content {
+.information-content {
   font-size: 1.2em;
 }
 
@@ -129,7 +129,7 @@ header a:hover {
   justify-content: center;
 }
 
-.table-infomation {
+.table-information {
   display: inline-block;
   text-align: left;
   font-style: oblique;
