@@ -67,7 +67,10 @@ header a:hover {
   margin-bottom: 3%;
   text-align: center;
 }
-
+.menu-header-title {
+  font-size: 2rem;
+  margin-bottom: 5%;
+}
 .menu-header-bottom {
   border-bottom: 5px solid red;
   padding-bottom: 10px;
