@@ -74,7 +74,7 @@ header a:hover {
 .shop-concept, .ramen-concept {
   position: relative;
 }
-.shop-concept-title, .ramen-concept-title {
+.ramen-concept-title {
   text-align: center;
   position: absolute;
   left: 50%;
@@ -87,6 +87,20 @@ header a:hover {
 	font-size: 5vw;
   font-family: serif;
   text-shadow: 3px 3px 2px black, 0 0 2em red, 0 0 1em red;
+}
+.shop-concept-text {
+	font-size: 4vw;
+	position: absolute;
+	left: 35%;
+	top: 15%;
+	transform: translate(-50%, -50%);
+}
+.shop-button {
+	text-align: center;
+	position: absolute;
+	left: 50%;
+	top: 60%;
+	transform: translate(-50%, -50%);
 }
 .menu-link-button {
   border-radius: 10px;
