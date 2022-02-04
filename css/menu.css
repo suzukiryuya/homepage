@@ -142,7 +142,6 @@ input[name="menu"] {
   align-items: center;
   justify-content: center;
   margin-bottom: 2%;
-  text-align: center;
 }
 
 .miso-name {
@@ -157,7 +156,7 @@ input[name="menu"] {
   font-size: 3rem;
 }
 .miso-category-concept, .ginger-sentence, .chuka-category-concept, .wantan-sentence, .syouyu-category-concept, .solt-category-concept {
-  font-size: 1.1rem;
+  font: bold 1.1rem sans-serif;
   padding-left: 20px;
   text-align: justify;
   text-justify: auto;
@@ -200,7 +199,7 @@ input[name="menu"] {
 }
 .other-category-concept,.child-category-concept, .rice-category-concept, .drink-category-concept, .side-category-concept, .takeout-category-concept, .lunch-category-concept {
   color: #000;
-  font-size: 1.6em;
+  font: bold 1.1rem sans-serif;
   padding-left: 20px;
   text-align: justify;
   text-justify: auto;
