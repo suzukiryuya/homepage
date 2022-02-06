@@ -144,15 +144,17 @@ input[name="menu"] {
   margin-bottom: 2%;
 }
 
+.price {
+  font-size: 1.5rem;
+}
+
+.miso-name, .category-miso, .miso-category-concept, .ginger-sentence {
+  color: #B22222;
+}
 .miso-name {
   font-size: 1.8rem;
-  color: #B22222;
-}
-.ginger-sentence {
-  color: #B22222;
 }
 .category-miso {
-  color: #B22222;
   font-size: 3rem;
 }
 .miso-category-concept, .ginger-sentence, .chuka-category-concept, .wantan-sentence, .syouyu-category-concept, .solt-category-concept {
@@ -161,42 +163,38 @@ input[name="menu"] {
   text-align: justify;
   text-justify: auto;
 }
-.miso-category-concept {
-  color: #B22222;
-}
 
+.chuka-name, .syouyu-name, .category-chuka, .category-syouyu, .chuka-category-concept, .syouyu-category-concept, .wantan-sentence {
+  color: red;
+}
 .chuka-name, .syouyu-name {
   font-size: 1.8rem;
-  color: red;
 }
 .category-chuka, .category-syouyu {
-  color: red;
   font-size: 3rem;
-}
-.chuka-category-concept, .wantan-sentence, .syouyu-category-concept{
-  color: red;
 }
 
+.solt-name, .category-solt, .solt-category-concept {
+  color: #007700;
+}
 .solt-name {
   font-size: 1.8rem;
-  color: #007700;
 }
 .category-solt {
-  color: #007700;
   font-size: 3rem;
-}
-.solt-category-concept {
-  color: #007700;
 }
 
 .other-name, .child-name, .rice-name, .side-name, .drink-name, .takeout-name {
   font-size: 1.8rem;
-  color: #000;
 }
-.category-other, .category-child, .category-rice, .category-side, .category-drink, .category-takeout, .category-lunch {
-  color: #000;
+.category-other, .category-child, .category-rice, .category-side, .category-lunch {
   font-size: 3rem;
 }
+
+.category-alcohol, .category-drink, .category-takeout {
+  font-size: 2.5rem;
+}
+
 .other-category-concept,.child-category-concept, .rice-category-concept, .drink-category-concept, .side-category-concept, .takeout-category-concept, .lunch-category-concept {
   color: #000;
   font: bold 1.1rem sans-serif;
