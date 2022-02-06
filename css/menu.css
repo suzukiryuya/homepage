@@ -191,11 +191,16 @@ input[name="menu"] {
 
 .other-name, .child-name, .rice-name, .side-name, .drink-name, .takeout-name {
   font-size: 1.8rem;
-  color: #000;
 }
-.category-other, .category-child, .category-rice, .category-side, .category-drink, .category-takeout, .category-lunch {
-  color: #000;
+.category-other, .category-child, .category-rice, .category-side, .category-lunch {
   font-size: 3rem;
+}
+
+.category-alcohol, .category-takeout {
+  font-size: 2.6rem;
+}
+.category-drink {
+  font-size: 2.5rem;
 }
 .other-category-concept,.child-category-concept, .rice-category-concept, .drink-category-concept, .side-category-concept, .takeout-category-concept, .lunch-category-concept {
   color: #000;
