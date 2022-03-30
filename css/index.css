@@ -241,10 +241,12 @@ details summary {
   font: bold 1.4em sans-serif;
   padding: 0 30px;
 }
-.attempt-border {
-  border-bottom: 3px solid red;
-  color: red;
-  font-family: serif;
+.underline {
+  border-bottom: 10px solid red;
+}
+.attempt-underline {
+	color: red;
+	font-family: serif;
 }
 
 /* ポイントカード */
