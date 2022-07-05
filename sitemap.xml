@@ -5,32 +5,27 @@
 <url>
   <loc>https://umai-menkuitei.com/</loc>
   <priority>1.0</priority>
-  <lastmod>2021-12-30T13:41:03+09:00</lastmod>
-  <changefreq>monthly</changefreq>
+  <lastmod>2022-07-05T13:55:53+09:00</lastmod>
 </url>
 <url>
   <loc>https://umai-menkuitei.com/index.html</loc>
   <priority>0.8</priority>
-  <lastmod>2021-12-30T13:41:03+09:00</lastmod>
-  <changefreq>monthly</changefreq>
+  <lastmod>2022-07-05T13:55:53+09:00</lastmod>
 </url>
 <url>
-  <loc>https://umai-menkuitei.com/menu.html</loc>
+  <loc>https://umai-menkuitei.com/menu/menu.html</loc>
   <priority>0.8</priority>
-  <lastmod>2021-12-30T13:41:03+09:00</lastmod>
-  <changefreq>monthly</changefreq>
+  <lastmod>2022-07-05T14:00:21+09:00</lastmod>
 </url>
 <url>
-  <loc>https://umai-menkuitei.com/quality.html</loc>
+  <loc>https://umai-menkuitei.com/quality/quality.html</loc>
   <priority>0.8</priority>
-  <lastmod>2021-12-30T13:41:04+09:00</lastmod>
-  <changefreq>monthly</changefreq>
+  <lastmod>2022-07-05T14:01:30+09:00</lastmod>
 </url>
 <url>
-  <loc>https://umai-menkuitei.com/information.html</loc>
+  <loc>https://umai-menkuitei.com/information/information.html</loc>
   <priority>0.8</priority>
-  <lastmod>2021-12-30T13:41:03+09:00</lastmod>
-  <changefreq>monthly</changefreq>
+  <lastmod>2022-07-05T13:58:22+09:00</lastmod>
 </url>
 
 </urlset>
