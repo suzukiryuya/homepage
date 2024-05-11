@@ -177,6 +177,12 @@ header a:hover {
   font-size: 1.5rem;
   height: 70px;
   padding: 0 10px;
+  vertical-align: middle;
+}
+.paypay-payment {
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
 }
 
 .store-table th, .recruitment th {
