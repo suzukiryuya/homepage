@@ -1,0 +1,431 @@
+/* =========================================================
+   うまい めんくい亭 — グローバルスタイル / デザインシステム
+   -------------------------------------------------------
+   色・文字サイズ・余白・角丸などの値はすべてここで
+   CSS カスタムプロパティ（変数）として定義し、各コンポーネントは
+   この変数を参照する。値を変えたいときはこのファイルだけを触る。
+   ========================================================= */
+
+:root {
+  /* ---------- カラーパレット ---------- */
+  /* ブランド（赤） */
+  --color-brand: #ee0000;
+  --color-brand-dark: #c00000;
+  --color-brand-darker: #8a0000;
+  /* アクセント（オレンジ） */
+  --color-accent: #f5a623;
+  --color-accent-dark: #cf8410;
+  /* テキスト */
+  --color-ink: #241c17;
+  --color-ink-soft: #5f5147;
+  --color-white: #ffffff;
+  --color-on-brand: #ffffff;
+  --color-link-hover: #ffec3d;
+  /* 面・罫線 */
+  --color-line: #e7ddd2;
+  --color-bg: #fdf7f0;
+  --color-surface: #ffffff;
+  --color-surface-warm: #fbf3e9;
+  /* 味カテゴリ（メニュー） */
+  --color-miso: #b3341f;
+  --color-chuka: #d12b2b;
+  --color-syouyu: #a8431c;
+  --color-solt: #1f7a4d;
+
+  /* ---------- 半透明表現用の RGB 値（rgba() のベース） ---------- */
+  --rgb-white: 255, 255, 255;
+  --rgb-black: 0, 0, 0;
+  --rgb-accent: 245, 166, 35; /* = --color-accent */
+  --rgb-hero-wash: 255, 250, 244; /* ヒーロー左のグラデ基色 */
+  --rgb-dark-scrim: 24, 8, 4; /* 写真上の暗幕基色 */
+  --rgb-shadow: 54, 30, 15; /* 影の基色 */
+
+  /* 濃色（赤 / 写真）面のテキスト・罫線 */
+  --on-dark: rgba(var(--rgb-white), 0.92);
+  --on-dark-dim: rgba(var(--rgb-white), 0.72);
+  --on-dark-faint: rgba(var(--rgb-white), 0.14);
+  --border-on-dark: rgba(var(--rgb-white), 0.6);
+  --border-on-dark-soft: rgba(var(--rgb-white), 0.25);
+
+  /* 写真の上に重ねるオーバーレイ */
+  --overlay-hero: linear-gradient(
+    90deg,
+    rgba(var(--rgb-hero-wash), 0.72) 0%,
+    rgba(var(--rgb-hero-wash), 0.4) 45%,
+    rgba(var(--rgb-hero-wash), 0) 80%
+  );
+  --overlay-feature: linear-gradient(
+    0deg,
+    rgba(var(--rgb-dark-scrim), 0.72),
+    rgba(var(--rgb-dark-scrim), 0.3)
+  );
+  --overlay-banner: rgba(var(--rgb-dark-scrim), 0.35);
+
+  /* 写真の上の文字影 */
+  --text-glow-light: 0 2px 10px rgba(var(--rgb-white), 0.95),
+    0 0 32px rgba(var(--rgb-white), 0.8);
+  --text-glow-light-sm: 0 1px 6px rgba(var(--rgb-white), 0.9);
+  --text-shadow-dark: 0 2px 14px rgba(var(--rgb-black), 0.55);
+  --text-shadow-dark-sm: 0 2px 8px rgba(var(--rgb-black), 0.7);
+  --text-glow-banner: 2px 2px 10px rgba(var(--rgb-black), 0.7),
+    0 0 24px rgba(var(--rgb-accent), 0.7);
+
+  /* ---------- フォント ---------- */
+  --font-sans: "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Yu Gothic",
+    YuGothic, "Noto Sans JP", Meiryo, Verdana, Roboto, sans-serif;
+  --font-serif: "Hiragino Mincho ProN", "Yu Mincho", YuMincho, "Noto Serif JP",
+    "Times New Roman", serif;
+
+  /* ---------- 文字サイズスケール ---------- */
+  --fs-2xs: 0.72rem;
+  --fs-xs: 0.8rem;
+  --fs-sm: 0.9rem;
+  --fs-base: 1rem;
+  --fs-md: 1.125rem;
+  --fs-lg: 1.35rem;
+  --fs-xl: 1.6rem;
+  --fs-2xl: 2rem;
+  --fs-title: clamp(1.7rem, 4.5vw, 2.4rem); /* セクション見出し */
+  --fs-page: clamp(1.9rem, 5.5vw, 3rem); /* 下層ページの大見出し */
+  --fs-hero: clamp(2rem, 6vw, 3.4rem); /* トップのキャッチ */
+
+  /* ---------- 太さ・行間・字間 ---------- */
+  --fw-normal: 400;
+  --fw-medium: 600;
+  --fw-bold: 700;
+  --fw-black: 800;
+  --lh-tight: 1.35;
+  --lh-snug: 1.5;
+  --lh-body: 1.8;
+  --tracking-xs: 0.05em;
+  --tracking-tight: 0.02em;
+  --tracking-wide: 0.14em;
+  --tracking-wider: 0.18em;
+  --tracking-widest: 0.25em;
+
+  /* ---------- 余白スケール ---------- */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+  --space-7: 3rem;
+  --space-8: 4rem;
+  --section-y: clamp(3.5rem, 8vw, 6rem);
+  --page-gutter: 2.5rem; /* コンテナ左右の余白 */
+  --accent-bar-w: 0.4rem; /* 見出し左のアクセントバー幅 */
+  --rule-h: 4px; /* 見出し下のライン太さ */
+
+  /* ---------- レイアウト ---------- */
+  --container: 1120px;
+  --radius-xs: 3px;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius: 16px;
+  --radius-lg: 24px;
+  --radius-pill: 999px;
+  --border-hairline: 1px; /* 罫線・下線の標準太さ */
+  --tap-target: 44px; /* タップ領域の最小サイズ */
+  --shadow-sm: 0 2px 8px rgba(var(--rgb-shadow), 0.08);
+  --shadow-md: 0 12px 32px rgba(var(--rgb-shadow), 0.12);
+  --header-h: 72px;
+
+  /* ---------- ブレークポイント ----------
+     CSS の @media 内では var() を使えないため、以下の値を
+     直接記述する。変更時はこのコメントと各ファイルを合わせて更新すること。
+       --bp-sm : 640px  … 2カラム→1カラム（内装ギャラリー等）
+       --bp-md : 780px  … 本文2カラム→1カラム（テイクアウト/こだわり等）
+       --bp-lg : 860px  … ヘッダーをハンバーガーメニューに切替
+  */
+  --bp-sm: 640px;
+  --bp-md: 780px;
+  --bp-lg: 860px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: calc(var(--header-h) + var(--space-4));
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  color: var(--color-ink);
+  background: var(--color-bg);
+  line-height: var(--lh-body);
+  font-size: var(--fs-base);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* 画像は既定で「枠に収まる」ようにする（縦横比を保持し、はみ出さない） */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  color: var(--color-brand-dark);
+  text-underline-offset: 3px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  line-height: var(--lh-tight);
+  font-weight: var(--fw-black);
+  letter-spacing: var(--tracking-tight);
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* ---------- レイアウトユーティリティ ---------- */
+.container {
+  width: min(var(--container), 100% - var(--page-gutter));
+  margin-inline: auto;
+}
+
+.section {
+  padding: var(--section-y) 0;
+}
+
+.section--warm {
+  background: var(--color-surface-warm);
+}
+
+.section--brand {
+  background: var(--color-brand);
+  color: var(--color-on-brand);
+}
+
+/* ---------- セクション見出し ---------- */
+.section-head {
+  text-align: center;
+  margin-bottom: clamp(var(--space-6), 5vw, var(--space-7));
+}
+
+.section-head__eyebrow {
+  display: block; /* 見出しと必ず改行され、余白が効くようにする */
+  font-size: var(--fs-xs);
+  font-weight: var(--fw-bold);
+  letter-spacing: var(--tracking-widest);
+  color: var(--color-accent-dark);
+  margin-bottom: var(--space-3);
+}
+
+.section--brand .section-head__eyebrow {
+  color: var(--color-accent);
+}
+
+.section-title {
+  font-size: var(--fs-title);
+  margin: 0;
+  display: inline-block;
+  position: relative;
+  padding-bottom: var(--space-3);
+}
+
+/* 見出し下のバー：中央寄せ時は中央、左寄せ時は左端に揃える */
+.section-title::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: var(--space-7);
+  height: var(--rule-h);
+  border-radius: var(--rule-h);
+  background: var(--color-accent);
+}
+
+.section-head--left {
+  text-align: left;
+}
+
+.section-head--left .section-title::after {
+  left: 0;
+  transform: none;
+}
+
+.section-lead {
+  max-width: 40rem;
+  margin: var(--space-5) auto 0;
+  color: var(--color-ink-soft);
+}
+
+.section-head--left .section-lead {
+  margin-inline: 0;
+}
+
+.section--brand .section-lead {
+  color: var(--on-dark);
+}
+
+/* 「左に色バー＋太字」の小見出し（ページ内の各ブロック用） */
+.block-title {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  margin: 0 0 var(--space-5);
+  font-size: var(--fs-xl);
+  color: var(--color-ink);
+}
+
+.block-title::before {
+  content: "";
+  flex: none;
+  width: var(--accent-bar-w);
+  height: 1.4em;
+  border-radius: var(--radius-xs);
+  background: var(--color-brand);
+}
+
+/* ---------- ボタン ---------- */
+/* ---------- ボタン ----------
+   2種類に統一する：
+     .btn          … 主要 CTA（塗り / アクセントのアンバー）
+     .btn--outline … 副次アクション（線）。標準はブランド赤の線・文字。
+                     赤ヘッダーや写真オーバーレイなど濃色面では
+                     .btn--on-dark を併用して白線・白文字にする。
+   新しいボタンを足すときは必ずこのどちらかを使うこと。 */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: var(--space-3) var(--space-5);
+  border-radius: var(--radius-pill);
+  background: var(--color-accent);
+  color: var(--color-ink);
+  font-weight: var(--fw-bold);
+  font-size: var(--fs-sm);
+  text-decoration: none;
+  border: 2px solid transparent;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
+  box-shadow: var(--shadow-sm);
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.btn--outline {
+  background: transparent;
+  color: var(--color-brand-dark);
+  border-color: currentColor;
+  box-shadow: none;
+}
+
+/* 線ボタンは hover でも影を出さず「副次アクション」の見え方を保つ */
+.btn--outline:hover {
+  box-shadow: none;
+}
+
+.btn--on-dark {
+  color: var(--color-white);
+}
+
+/* ---------- チップ / タグ ---------- */
+.chip {
+  display: inline-block;
+  padding: var(--space-1) var(--space-3);
+  border-radius: var(--radius-pill);
+  font-size: var(--fs-2xs);
+  font-weight: var(--fw-bold);
+  letter-spacing: var(--tracking-xs);
+  color: var(--color-white);
+  background: var(--color-ink-soft);
+}
+
+.chip--notice {
+  background: var(--color-accent-dark);
+}
+
+.chip--campaign {
+  background: var(--color-brand);
+}
+
+/* ---------- 汎用テーブル ---------- */
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--color-surface);
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+}
+
+.data-table th,
+.data-table td {
+  text-align: left;
+  padding: var(--space-4) var(--space-5);
+  vertical-align: top;
+  border-bottom: var(--border-hairline) solid var(--color-line);
+  font-size: var(--fs-sm);
+}
+
+.data-table tr:last-child th,
+.data-table tr:last-child td {
+  border-bottom: 0;
+}
+
+.data-table th {
+  width: 28%;
+  min-width: 7.5rem;
+  background: var(--color-surface-warm);
+  color: var(--color-brand-dark);
+  font-weight: var(--fw-bold);
+}
+
+.data-table ul {
+  padding-left: 1.1rem;
+  list-style: disc;
+}
+
+.data-table td p {
+  margin: 0 0 var(--space-2);
+}
+
+.data-table td p:last-child {
+  margin-bottom: 0;
+}
+
+.emphasis {
+  color: var(--color-brand);
+  font-weight: var(--fw-bold);
+}
+
+/* ---------- アクセシビリティ ---------- */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
