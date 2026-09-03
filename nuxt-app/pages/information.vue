@@ -28,7 +28,7 @@ const seats = [
       <div class="container info-body">
         <!-- 外観 -->
         <div class="info-block">
-          <h2 class="info-block__title">赤い看板が目印です！</h2>
+          <h2 class="block-title">赤い看板が目印です！</h2>
           <p class="info-block__text">
             日立北インター（6号出口）を降りて、北に5分のところにあります。「十王駅入口」の交差点近く、国道6号沿いの赤い看板が目印です！
           </p>
@@ -37,7 +37,7 @@ const seats = [
 
         <!-- 内装 -->
         <div class="info-block">
-          <h2 class="info-block__title">座席を完備！</h2>
+          <h2 class="block-title">座席を完備！</h2>
           <p class="info-block__text">
             ご家族でも、ご夫婦でも、職場の仲間とも、もちろんお一人様でも。お客様のニーズにお応えできるよう多くの席をご用意しております。美味しいラーメンとおくつろぎいただける空間で、皆様のご来店をお待ちしております！
           </p>
@@ -61,7 +61,7 @@ const seats = [
 
         <!-- 店舗詳細 -->
         <div class="info-block">
-          <h2 class="info-block__title">店舗詳細</h2>
+          <h2 class="block-title">店舗詳細</h2>
           <table class="data-table">
             <tbody>
               <tr>
@@ -201,7 +201,7 @@ const seats = [
 
 <style scoped>
 .info-body {
-  max-width: 60rem;
+  max-width: var(--measure-wide);
 }
 
 .info-block {
@@ -210,24 +210,6 @@ const seats = [
 
 .info-block:last-child {
   margin-bottom: 0;
-}
-
-.info-block__title {
-  display: flex;
-  align-items: center;
-  gap: var(--space-3);
-  margin: 0 0 var(--space-4);
-  font-size: var(--fs-xl);
-  color: var(--color-ink);
-}
-
-.info-block__title::before {
-  content: "";
-  flex: none;
-  width: var(--accent-bar-w);
-  height: 1.4em;
-  border-radius: var(--radius-xs);
-  background: var(--color-brand);
 }
 
 .info-block__text {

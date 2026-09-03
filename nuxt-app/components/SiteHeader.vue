@@ -18,8 +18,8 @@ watch(
         <img
           src="/images/common/logo.jpg"
           :alt="`${info.shopNameFull} ロゴ`"
-          width="120"
-          height="48"
+          width="250"
+          height="150"
           class="brand__logo"
         />
       </NuxtLink>
@@ -50,9 +50,7 @@ watch(
         </ul>
         <div class="site-nav__cta">
           <a :href="info.phoneHref" class="btn">
-            <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" fill="currentColor">
-              <path d="M6.6 10.8a15.6 15.6 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1 11.4 11.4 0 0 0 .57 3.6 1 1 0 0 1-.25 1z" />
-            </svg>
+            <IconPhone />
             電話する
           </a>
           <a :href="info.mapUrl" class="btn btn--outline btn--on-dark" target="_blank" rel="noopener">
@@ -107,7 +105,7 @@ watch(
 }
 
 .site-nav__link {
-  color: var(--color-on-brand);
+  color: var(--color-white);
   text-decoration: none;
   font-weight: var(--fw-bold);
   font-size: var(--fs-sm);
@@ -150,7 +148,7 @@ watch(
   left: 50%;
   width: 20px;
   height: 2px;
-  background: var(--color-on-brand);
+  background: var(--color-white);
   border-radius: 2px;
   transition: transform 0.2s ease, opacity 0.2s ease;
 }

@@ -6,13 +6,7 @@ const props = defineProps<{
   lead?: string | string[]
 }>()
 
-const leadLines = computed(() =>
-  props.lead == null
-    ? []
-    : Array.isArray(props.lead)
-      ? props.lead
-      : [props.lead],
-)
+const leadLines = computed<string[]>(() => [props.lead ?? []].flat())
 </script>
 
 <template>
@@ -66,7 +60,7 @@ const leadLines = computed(() =>
 }
 
 .page-hero__lead {
-  max-width: 42rem;
+  max-width: var(--measure-text);
   margin: var(--space-5) auto 0;
   color: var(--color-ink-soft);
 }

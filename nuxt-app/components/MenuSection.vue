@@ -75,7 +75,6 @@ defineProps<{ section: MenuSection }>()
   margin: var(--space-3) 0 0;
   color: var(--color-ink-soft);
   font-weight: var(--fw-bold);
-  max-width: 46rem;
 }
 
 .menu-grid {

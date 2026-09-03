@@ -4,7 +4,6 @@ export interface NavLink {
 }
 
 export interface SiteInfo {
-  shopName: string
   shopNameFull: string
   catchcopy: string
   phone: string
@@ -19,7 +18,6 @@ export interface SiteInfo {
 }
 
 const info: SiteInfo = {
-  shopName: 'うまい めんくい亭',
   shopNameFull: 'うまいめんくい亭 日立川尻店',
   catchcopy: 'みなさまに笑顔が生まれるラーメンをお届けします',
   phone: '0294-43-6040',

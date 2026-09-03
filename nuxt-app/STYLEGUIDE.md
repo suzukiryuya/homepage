@@ -55,7 +55,7 @@ box-shadow: var(--shadow-sm);
 ### 色
 - ブランド：`--color-brand` / `--color-brand-dark` / `--color-brand-darker`
 - アクセント：`--color-accent` / `--color-accent-dark`
-- テキスト：`--color-ink` / `--color-ink-soft` / `--color-white` / `--color-on-brand` / `--color-link-hover`
+- テキスト：`--color-ink` / `--color-ink-soft` / `--color-white` / `--color-link-hover`
 - 面：`--color-bg` / `--color-surface` / `--color-surface-warm` / `--color-line`
 - メニューの味カテゴリ：`--color-miso` / `--color-chuka` / `--color-syouyu` / `--color-solt`
 
@@ -67,14 +67,17 @@ box-shadow: var(--shadow-sm);
 - 写真上の文字影：`--text-glow-light` / `--text-glow-light-sm` / `--text-shadow-dark` / `--text-shadow-dark-sm` / `--text-glow-banner`
 
 ### 文字
-- サイズ：`--fs-2xs / xs / sm / base / md / lg / xl / 2xl`、レスポンシブは `--fs-title` / `--fs-page` / `--fs-hero`
-- 太さ：`--fw-normal(400) / medium(600) / bold(700) / black(800)`
+- サイズ：`--fs-2xs / xs / sm / base / md / lg / xl`、レスポンシブは `--fs-title` / `--fs-page` / `--fs-hero`
+- 太さ：`--fw-medium(600) / bold(700) / black(800)`
 - 行間：`--lh-tight(1.35) / snug(1.5) / body(1.8)`
 - 字間：`--tracking-xs / tight / wide / wider / widest`
 
 ### 余白（4px 刻み）
 `--space-1`(4) `--space-2`(8) `--space-3`(12) `--space-4`(16) `--space-5`(24) `--space-6`(32) `--space-7`(48) `--space-8`(64)
 セクション上下は `--section-y`、コンテナ左右は `--page-gutter`
+
+### 本文の最大幅（行長）
+`--measure-text`(42rem リード/説明文) / `--measure-content`(52rem お知らせ等のリスト) / `--measure-wide`(60rem 店舗情報)
 
 ### レイアウト
 `--container` / `--radius-xs(3) / sm(8) / md(12) / (16) / lg(24) / pill` / `--border-hairline` / `--tap-target(44)` / `--header-h(72)`
@@ -91,14 +94,16 @@ box-shadow: var(--shadow-sm);
 | クラス | 用途 |
 |---|---|
 | `.container` | 中央寄せ＋左右ガター |
-| `.section` / `.section--warm` / `.section--brand` | セクションの余白・背景 |
+| `.section` / `.section--warm` | セクションの余白・背景 |
 | `.section-head` / `.section-head__eyebrow` / `.section-title` / `.section-lead` | セクション見出し（英字ラベル＋日本語＋下線バー）。左寄せは `.section-head--left` |
-| `.block-title` | ページ内の小見出し（左に赤いアクセントバー＋太字）。`.menu-section__title` や `.info-block__title` と同じパターン |
+| `.block-title` | ページ内の小見出し（左に赤いアクセントバー＋太字）。ページ側で `.info-block__title` 等を再実装せずこれを使う |
 | `.btn` / `.btn--outline` / `.btn--on-dark` | ボタン（下記 4 章） |
 | `.chip` / `.chip--notice` / `.chip--campaign` | タグ |
+| `.news-list` / `.news-cta` | お知らせ一覧（トップ・お知らせページ共通） |
 | `.data-table` | 店舗情報・採用情報などの表 |
 | `.emphasis` | 本文中の赤強調 |
 | `.visually-hidden` | スクリーンリーダー専用テキスト |
+| `<IconPhone />` | 電話アイコン（コンポーネント）。SVG を各所に直書きしない |
 
 ---
 

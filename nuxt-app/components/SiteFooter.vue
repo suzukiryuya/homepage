@@ -1,6 +1,8 @@
 <script setup lang="ts">
 const info = useSiteInfo()
 const year = new Date().getFullYear()
+const copyrightYears =
+  year > info.copyrightYear ? `${info.copyrightYear}–${year}` : `${info.copyrightYear}`
 </script>
 
 <template>
@@ -10,8 +12,8 @@ const year = new Date().getFullYear()
         <img
           src="/images/common/logo.jpg"
           :alt="`${info.shopNameFull} ロゴ`"
-          width="140"
-          height="56"
+          width="250"
+          height="150"
           class="site-footer__logo"
         />
         <p class="site-footer__address">{{ info.address }}</p>
@@ -20,9 +22,7 @@ const year = new Date().getFullYear()
       <div class="site-footer__contact">
         <p class="site-footer__lead">テイクアウトのご注文はぜひお電話で！</p>
         <a :href="info.phoneHref" class="btn site-footer__phone">
-          <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" fill="currentColor">
-            <path d="M6.6 10.8a15.6 15.6 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1 11.4 11.4 0 0 0 .57 3.6 1 1 0 0 1-.25 1z" />
-          </svg>
+          <IconPhone />
           {{ info.phone }}
         </a>
       </div>
@@ -39,7 +39,7 @@ const year = new Date().getFullYear()
       </nav>
     </div>
 
-    <p class="site-footer__copy">© {{ year }} うまい めんくい亭</p>
+    <p class="site-footer__copy">© {{ copyrightYears }} うまい めんくい亭</p>
   </footer>
 </template>
 

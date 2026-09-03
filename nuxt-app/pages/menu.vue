@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { menuFilters, useMenu } from '~/composables/useMenu'
+// useMenu / menuFilters は composables/ から自動 import される
 import type { MenuFilter } from '~/composables/useMenu'
 
 const sections = useMenu()
@@ -96,7 +96,7 @@ useHead({
   padding: var(--space-2) var(--space-4);
   border-radius: var(--radius-pill);
   cursor: pointer;
-  transition: all 0.15s ease;
+  transition: color 0.15s ease, background-color 0.15s ease, border-color 0.15s ease;
 }
 
 .menu-tab:hover {

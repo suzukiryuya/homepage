@@ -22,25 +22,10 @@ useHead({
         <div class="news-list">
           <NewsCard v-for="n in news" :key="n.date + n.title" :item="n" />
         </div>
-        <p class="news-back">
+        <p class="news-cta">
           <NuxtLink to="/" class="btn btn--outline">トップページへ戻る</NuxtLink>
         </p>
       </div>
     </section>
   </div>
 </template>
-
-<style scoped>
-.news-list {
-  display: flex;
-  flex-direction: column;
-  gap: var(--space-3);
-  max-width: 52rem;
-  margin: 0 auto;
-}
-
-.news-back {
-  margin: var(--space-7) 0 0;
-  text-align: center;
-}
-</style>

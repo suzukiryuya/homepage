@@ -19,7 +19,6 @@
   --color-ink: #241c17;
   --color-ink-soft: #5f5147;
   --color-white: #ffffff;
-  --color-on-brand: #ffffff;
   --color-link-hover: #ffec3d;
   /* 面・罫線 */
   --color-line: #e7ddd2;
@@ -84,13 +83,11 @@
   --fs-md: 1.125rem;
   --fs-lg: 1.35rem;
   --fs-xl: 1.6rem;
-  --fs-2xl: 2rem;
   --fs-title: clamp(1.7rem, 4.5vw, 2.4rem); /* セクション見出し */
   --fs-page: clamp(1.9rem, 5.5vw, 3rem); /* 下層ページの大見出し */
   --fs-hero: clamp(2rem, 6vw, 3.4rem); /* トップのキャッチ */
 
   /* ---------- 太さ・行間・字間 ---------- */
-  --fw-normal: 400;
   --fw-medium: 600;
   --fw-bold: 700;
   --fw-black: 800;
@@ -116,6 +113,11 @@
   --page-gutter: 2.5rem; /* コンテナ左右の余白 */
   --accent-bar-w: 0.4rem; /* 見出し左のアクセントバー幅 */
   --rule-h: 4px; /* 見出し下のライン太さ */
+
+  /* ---------- 本文の最大幅（読みやすさのための行長） ---------- */
+  --measure-text: 42rem; /* リード文・説明文のブロック */
+  --measure-content: 52rem; /* お知らせ一覧などのカードリスト */
+  --measure-wide: 60rem; /* 店舗情報など縦長の読みもの */
 
   /* ---------- レイアウト ---------- */
   --container: 1120px;
@@ -207,11 +209,6 @@ ul {
   background: var(--color-surface-warm);
 }
 
-.section--brand {
-  background: var(--color-brand);
-  color: var(--color-on-brand);
-}
-
 /* ---------- セクション見出し ---------- */
 .section-head {
   text-align: center;
@@ -225,10 +222,6 @@ ul {
   letter-spacing: var(--tracking-widest);
   color: var(--color-accent-dark);
   margin-bottom: var(--space-3);
-}
-
-.section--brand .section-head__eyebrow {
-  color: var(--color-accent);
 }
 
 .section-title {
@@ -262,17 +255,13 @@ ul {
 }
 
 .section-lead {
-  max-width: 40rem;
+  max-width: var(--measure-text);
   margin: var(--space-5) auto 0;
   color: var(--color-ink-soft);
 }
 
 .section-head--left .section-lead {
   margin-inline: 0;
-}
-
-.section--brand .section-lead {
-  color: var(--on-dark);
 }
 
 /* 「左に色バー＋太字」の小見出し（ページ内の各ブロック用） */
@@ -294,7 +283,6 @@ ul {
   background: var(--color-brand);
 }
 
-/* ---------- ボタン ---------- */
 /* ---------- ボタン ----------
    2種類に統一する：
      .btn          … 主要 CTA（塗り / アクセントのアンバー）
@@ -392,7 +380,7 @@ ul {
 }
 
 .data-table ul {
-  padding-left: 1.1rem;
+  padding-left: var(--space-4);
   list-style: disc;
 }
 
@@ -407,6 +395,20 @@ ul {
 .emphasis {
   color: var(--color-brand);
   font-weight: var(--fw-bold);
+}
+
+/* ---------- お知らせ一覧（トップ / お知らせページ共通） ---------- */
+.news-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  max-width: var(--measure-content);
+  margin-inline: auto;
+}
+
+.news-cta {
+  margin: var(--space-6) 0 0;
+  text-align: center;
 }
 
 /* ---------- アクセシビリティ ---------- */

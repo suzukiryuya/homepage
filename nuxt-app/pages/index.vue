@@ -34,7 +34,7 @@ useHead({
         <div class="news-list">
           <NewsCard v-for="n in latestNews" :key="n.date + n.title" :item="n" />
         </div>
-        <p class="news-more">
+        <p class="news-cta">
           <NuxtLink to="/news" class="btn btn--outline">お知らせ一覧を見る</NuxtLink>
         </p>
       </div>
@@ -125,7 +125,7 @@ useHead({
 
 .hero__content {
   color: var(--color-ink);
-  max-width: 46rem;
+  max-width: 46rem; /* ヒーロー見出しブロックの幅（このセクション固有） */
   padding-block: var(--space-7);
 }
 
@@ -154,19 +154,7 @@ useHead({
   margin-top: var(--space-6);
 }
 
-/* ---- お知らせ ---- */
-.news-list {
-  display: flex;
-  flex-direction: column;
-  gap: var(--space-3);
-  max-width: 52rem;
-  margin: 0 auto;
-}
-
-.news-more {
-  margin: var(--space-6) 0 0;
-  text-align: center;
-}
+/* お知らせ一覧の見た目は main.css の .news-list / .news-cta を使用 */
 
 /* ---- 人気No.1 ---- */
 .feature {
@@ -194,7 +182,7 @@ useHead({
 .feature__content {
   color: var(--color-white);
   text-align: center;
-  max-width: 40rem;
+  max-width: var(--measure-text);
   margin-inline: auto;
 }
 
@@ -270,10 +258,6 @@ useHead({
   .takeout,
   .point {
     grid-template-columns: 1fr;
-  }
-
-  .point__text {
-    order: -1;
   }
 }
 </style>
